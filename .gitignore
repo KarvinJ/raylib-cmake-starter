@@ -1,0 +1,8 @@
+*.exe
+*.dsym
+*.html
+*.js
+*.wasm
+*.data
+/.vscode
+.idea
