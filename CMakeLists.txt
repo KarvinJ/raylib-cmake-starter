@@ -38,3 +38,8 @@ target_include_directories(raylib_starter PRIVATE ${raylib_INCLUDE_DIRS})
 # link all libraries to the project
 target_link_libraries(raylib_starter PRIVATE ${LIB1})
 
+#moving the assets file to my build directory.
+file(COPY assets/img/alien.png DESTINATION ${CMAKE_BINARY_DIR}/assets/img)
+file(COPY assets/sounds/okay.wav DESTINATION ${CMAKE_BINARY_DIR}/assets/sounds)
+file(COPY assets/music/pixel3.mp3 DESTINATION ${CMAKE_BINARY_DIR}/assets/music)
+
