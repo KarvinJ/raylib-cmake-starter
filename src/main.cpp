@@ -96,8 +96,15 @@ void draw()
     EndDrawing();
 }
 
+
+// Disable the console in Windows releases
+// # if defined(WIN32) && !defined(_DEBUG)
+// #pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup")
+// #endif
+
 int main()
 {
+    //SetTraceLogLevel(LOG_ERROR);//only show errors in the log
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Starter");
     SetTargetFPS(60);
 
