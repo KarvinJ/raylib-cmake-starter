@@ -61,7 +61,6 @@ void update(float deltaTime)
         ballVelocityY *= -1;
     }
 
-    // Check collision between a two rectangles.
     if (CheckCollisionRecs(ball, player.bounds))
     {
         ballVelocityX *= -1;
