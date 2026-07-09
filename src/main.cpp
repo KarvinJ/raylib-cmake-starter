@@ -13,13 +13,6 @@ typedef struct
 
 Player player;
 
-typedef struct
-{
-    Vector2 position;
-    Vector2 velocity;
-    int radius;
-} Ball;
-
 Rectangle ball = {SCREEN_WIDTH / 2 + 50, SCREEN_HEIGHT / 2, 32, 32};
 
 int ballVelocityX = 300;
